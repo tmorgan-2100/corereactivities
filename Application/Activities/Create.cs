@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace API.Controllers
+namespace Application.Activities
 {
     public class Create
     {

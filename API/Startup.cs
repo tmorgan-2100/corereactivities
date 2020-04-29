@@ -40,6 +40,7 @@ namespace API
                     });
             });
             services.AddMediatR(typeof(List.Handler).Assembly);
+            services.AddMediatR(typeof(Create.Handler).Assembly);
             services.AddControllers();
         }
 
