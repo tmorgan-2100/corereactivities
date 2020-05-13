@@ -13,7 +13,7 @@ const ActivityForm: React.FC<IProps> = ({
   activity: initialFormState,
 }) => {
   const activityStore = useContext(ActivityStore);
-  const {createActivity, editActivity, submitting, cancelFormOpen} = activityStore;
+  const {createActivity, editActivity, submitting} = activityStore;
   const initializeForm = () => {
     if (initialFormState) {
       return initialFormState;
@@ -94,7 +94,6 @@ const ActivityForm: React.FC<IProps> = ({
         />
         <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
         <Button
-          onClick={cancelFormOpen}
           floated='right'
           type='button'
           content='Cancel'
