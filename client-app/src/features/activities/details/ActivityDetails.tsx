@@ -21,6 +21,7 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
     loadingInitial
   } = activityStore;
 
+    console.log(match.params.id);
   useEffect(() => {
     loadActivity(match.params.id);
   }, [loadActivity, match.params.id]);
